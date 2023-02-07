@@ -1,0 +1,152 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.input {
+  height: 30px;
+  width: 300px;
+}
+
+li {
+  list-style: none;
+  background-color: rgb(73, 122, 72);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.custom-list {
+  flex-direction: row;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.inner {
+  width: 100%;
+  padding: 8rem 10px 4rem;
+}
+
+.form-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-text {
+  flex: 7.5;
+  font-size: 1rem;
+  padding: 0px 15px;
+  border: 1px solid #f0f0f0;
+  font-weight: 400;
+  max-width: 80%;
+  margin-right: 10px;
+  padding: 0 15px;
+}
+
+.input-text::placeholder {
+  color: #000;
+}
+
+.input-submit {
+  flex: 2.5;
+  border: none;
+  background: #d7d7d7;
+  color: #5b5b5b;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: 600;
+  width: 20%;
+}
+
+.input-text,
+.input-submit {
+  height: 45px;
+  outline: none;
+  box-shadow: 0 1px 6px 0 rgba(168, 167, 167, 0.28);
+  border-radius: calc(0.5 * 100px);
+}
+
+.item {
+  font-size: 1.2rem;
+  list-style-type: none;
+  padding: 17px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  /* border-bottom: 1px solid #eaeaea; */
+}
+
+.checkbox {
+  margin-right: 15px;
+  float: right;
+  margin-top: 10px;
+}
+
+.item button {
+  font-size: 14px;
+  background: #e8e8e8;
+  color: #ff4a04;
+  border: none;
+  cursor: pointer;
+  /* margin-bottom: 20px; */
+  margin-right: 5px;
+  float: right;
+  outline: none;
+  background-color: #1a1a1a;
+}
+
+.textInput {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #dfdfdf;
+}
