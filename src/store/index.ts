@@ -1,5 +1,7 @@
 import { create } from "zustand";
 import produce from "immer";
+import { TodoList } from "../App";
+import { TodoType } from "../App";
 
 const saveTodos = (todos: TodoList) => {
   localStorage.setItem("todos", JSON.stringify(todos));
@@ -16,14 +18,6 @@ const loadTodos = (): TodoList | [] => {
     return [];
   }
 };
-
-export type TodoType = {
-  id: number;
-  title: string;
-  status: boolean; // true is completed
-};
-
-export type TodoList = TodoType[];
 
 type StoreType = {
   todos: TodoList | null;
